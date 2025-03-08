@@ -6,8 +6,8 @@ public class PickupOrder extends Order {
     }
 
     @Override
-    public void processOrder() {
-        System.out.println("Processando pedido para retirada: " + orderId);
+    public String processOrder() {
+        return "Processando pedido para retirada: " + orderId;
     }
 
     @Override

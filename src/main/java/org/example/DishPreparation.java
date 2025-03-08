@@ -12,11 +12,11 @@ abstract class DishPreparation {
         serve();
     }
 
-    protected abstract void prepareIngredients();
-    protected abstract void cook();
-    protected abstract void garnish();
+    protected abstract String prepareIngredients();
+    protected abstract String cook();
+    protected abstract String garnish();
 
-    private void serve() {
-        System.out.println("Servindo o prato.");
+    private String serve() {
+        return "Servindo o prato.";
     }
 }

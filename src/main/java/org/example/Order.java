@@ -21,7 +21,7 @@ abstract class Order implements Prototype<Order> {
         this.state = new ReceivedState(); // estado inicial
     }
 
-    public abstract void processOrder();
+    public abstract String processOrder();
 
     // Gerenciamento de observadores (Observer)
     public void addObserver(OrderObserver observer) {

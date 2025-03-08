@@ -3,7 +3,7 @@ package org.example;
 class DeliveredState implements OrderState {
     @Override
     public void next(Order order) {
-        System.out.println("O pedido já foi entregue.");
+        throw new UnsupportedOperationException("Pedido já entregue.");
     }
 
     @Override

@@ -8,7 +8,7 @@ public class Customer implements OrderObserver {
     }
 
     @Override
-    public void update(String status) {
-        System.out.println("Notificação para " + name + ": " + status);
+    public String update(String status) {
+        return "Notificação para " + name + ": " + status;
     }
 }

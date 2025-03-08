@@ -6,8 +6,8 @@ public class DeliveryOrder extends Order {
     }
 
     @Override
-    public void processOrder() {
-        System.out.println("Processando pedido de delivery: " + orderId);
+    public String processOrder() {
+        return "Processando pedido de delivery: " + orderId;
     }
 
     @Override

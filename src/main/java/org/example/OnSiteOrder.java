@@ -6,8 +6,8 @@ public class OnSiteOrder extends Order {
     }
 
     @Override
-    public void processOrder() {
-        System.out.println("Processando pedido para consumo no local: " + orderId);
+    public String processOrder() {
+        return "Processando pedido para consumo no local: " + orderId;
     }
 
     @Override
