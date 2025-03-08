@@ -5,8 +5,10 @@ import java.util.List;
 
 /* ===============================
    Factory Method – Criação de Pedidos
+   Prototype - Clonagem do objeto
    =============================== */
-abstract class Order {
+
+abstract class Order implements Prototype<Order> {
     protected String orderId;
     protected double amount;
     protected OrderState state;
@@ -21,7 +23,7 @@ abstract class Order {
 
     public abstract void processOrder();
 
-    // Observer: gerenciamento de observadores
+    // Gerenciamento de observadores (Observer)
     public void addObserver(OrderObserver observer) {
         observers.add(observer);
     }
@@ -57,4 +59,8 @@ abstract class Order {
     public void setPriceStrategy(PriceCalculationStrategy strategy) {
         this.priceStrategy = strategy;
     }
+
+    // Método clone para o Prototype Pattern
+    @Override
+    public abstract Order clone();
 }

@@ -8,7 +8,7 @@ public class GlobalConfig {
     private double serviceTax;
     private String openingHours;
 
-    public GlobalConfig() {
+    private GlobalConfig() {
         // Configuração padrão
         serviceTax = 0.1; // 10%
         openingHours = "08:00 - 22:00";
