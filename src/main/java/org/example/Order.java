@@ -17,7 +17,7 @@ public abstract class Order extends Observable {
     public Order(String orderId, double amount) {
         this.orderId = orderId;
         this.amount = amount;
-        this.state = new ReceivedState(); // estado inicial
+        this.state = new ReceivedState();
     }
 
     public abstract String processOrder();
