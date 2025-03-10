@@ -1,5 +1,5 @@
 package org.example;
 
-interface MenuFactory {
+public interface MenuFactory {
     Menu createMenu();
 }

@@ -1,6 +1,6 @@
 package org.example;
 
-class Pizza implements Dish {
+public class Pizza implements Dish {
     @Override
     public String getDescription() {
         return "Pizza";

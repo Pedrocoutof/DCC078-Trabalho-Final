@@ -1,6 +1,6 @@
 package org.example;
 
-class PastaPreparation extends DishPreparation {
+public class PastaPreparation extends DishPreparation {
     @Override
     protected String prepareIngredients() {
         return "Preparando macarrão, alho e azeite.";

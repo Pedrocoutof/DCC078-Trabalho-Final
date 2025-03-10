@@ -3,8 +3,7 @@ package org.example;
 /* ===============================
    Decorator – Personalização de Pratos
    =============================== */
-interface Dish {
+public interface Dish {
     String getDescription();
     double getCost();
 }
-

@@ -1,6 +1,6 @@
 package org.example;
 
-class ExtraCheese extends DishDecorator {
+public class ExtraCheese extends DishDecorator {
     public ExtraCheese(Dish dish) {
         super(dish);
     }

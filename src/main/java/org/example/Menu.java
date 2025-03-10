@@ -3,6 +3,6 @@ package org.example;
 /* ===============================
    Abstract Factory – Criação de Menus
    =============================== */
-interface Menu {
+public interface Menu {
     String showMenu();
 }

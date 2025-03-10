@@ -3,18 +3,30 @@ package org.example;
 /* ===============================
    Template Method – Fluxo de Preparo de Pratos
    =============================== */
-abstract class DishPreparation {
-    // Template Method final que define o fluxo de preparo
-    public final void prepareDish() {
+public abstract class DishPreparation {
+
+    public final String prepareDish() {
         prepareIngredients();
         cook();
         garnish();
-        serve();
+        return serve();
     }
 
     protected abstract String prepareIngredients();
     protected abstract String cook();
     protected abstract String garnish();
+
+    public String getPrepareIngredients() {
+        return prepareIngredients();
+    }
+
+    public String getCook() {
+        return cook();
+    }
+
+    public String getGarnish() {
+        return garnish();
+    }
 
     private String serve() {
         return "Servindo o prato.";

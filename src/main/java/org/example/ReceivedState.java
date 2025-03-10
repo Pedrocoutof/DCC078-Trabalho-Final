@@ -1,6 +1,6 @@
 package org.example;
 
-class ReceivedState implements OrderState {
+public class ReceivedState implements OrderState {
     @Override
     public void next(Order order) {
         order.setState(new PreparingState());
