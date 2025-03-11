@@ -13,7 +13,7 @@ public class CalculateDiscountTest {
 
     @Before
     public void setUp() throws Exception {
-        order = OrderFactory.createOrder("delivery", "001", 100);
+        order = OrderFactory.createOrder("Delivery", "001", 100);
     }
 
     @Test

@@ -11,7 +11,7 @@ public class OrderFactoryTest {
 
     @Test
     public void testCreateDeliveryOrder() {
-        Order order = OrderFactory.createOrder("delivery", "001", 50.0);
+        Order order = OrderFactory.createOrder("Delivery", "001", 50.0);
 
         assertNotNull(order);
 
@@ -25,7 +25,7 @@ public class OrderFactoryTest {
 
     @Test
     public void testCreatePickupOrder() {
-        Order order = OrderFactory.createOrder("pickup", "001", 50.0);
+        Order order = OrderFactory.createOrder("Pickup", "001", 50.0);
 
         assertNotNull(order);
 
@@ -39,7 +39,7 @@ public class OrderFactoryTest {
 
     @Test
     public void testCreateOnSiteOrderOrder() {
-        Order order = OrderFactory.createOrder("onsite", "001", 50.0);
+        Order order = OrderFactory.createOrder("OnSite", "001", 50.0);
 
         assertNotNull(order);
 

@@ -7,7 +7,7 @@ import static org.junit.Assert.assertEquals;
 public class OrderStateTest {
     @Test
     public void testOrderStateFlow() {
-        Order order = OrderFactory.createOrder("delivery", "001", 50.0);
+        Order order = OrderFactory.createOrder("Delivery", "001", 50.0);
 
         assertEquals( "Recebido", order.getState().getStateName());
 
@@ -24,7 +24,7 @@ public class OrderStateTest {
 
     @Test
     public void tryNextStatusInDelivered() {
-        Order order = OrderFactory.createOrder("delivery", "001", 50.0);
+        Order order = OrderFactory.createOrder("Delivery", "001", 50.0);
 
         order.getState().next(order);
         order.getState().next(order);
