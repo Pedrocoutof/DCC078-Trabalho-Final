@@ -1,6 +1,11 @@
 import static org.junit.jupiter.api.Assertions.*;
 
-import org.example.*;
+import org.example.order.Order;
+import org.example.order.factoryMethod.OrderFactory;
+import org.example.order.states.ReadyState;
+import org.example.order.states.ReceivedState;
+import org.example.strategy.RegularPriceStrategy;
+import org.example.strategy.VIPDiscountStrategy;
 import org.junit.jupiter.api.Test;
 
 public class OrderTest {

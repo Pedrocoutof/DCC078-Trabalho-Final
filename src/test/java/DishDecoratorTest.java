@@ -1,9 +1,9 @@
 import static org.junit.Assert.assertEquals;
 
-import org.example.Dish;
-import org.example.ExtraCheese;
-import org.example.ExtraPepperoni;
-import org.example.Pizza;
+import org.example.decorator.Dish;
+import org.example.decorator.ExtraCheese;
+import org.example.decorator.ExtraPepperoni;
+import org.example.decorator.Pizza;
 import org.junit.jupiter.api.Test;
 
 public class DishDecoratorTest {

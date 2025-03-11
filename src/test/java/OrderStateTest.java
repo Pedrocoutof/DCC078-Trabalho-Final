@@ -1,5 +1,5 @@
-import org.example.Order;
-import org.example.OrderFactory;
+import org.example.order.Order;
+import org.example.order.factoryMethod.OrderFactory;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.Assert.assertEquals;

@@ -1,7 +1,7 @@
 
-import org.example.DishPreparation;
-import org.example.PastaPreparation;
-import org.example.PizzaPreparation;
+import org.example.templateMethod.DishPreparation;
+import org.example.templateMethod.PastaPreparation;
+import org.example.templateMethod.PizzaPreparation;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;

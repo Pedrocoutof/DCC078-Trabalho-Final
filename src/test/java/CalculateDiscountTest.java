@@ -1,7 +1,7 @@
-import org.example.Order;
-import org.example.OrderFactory;
-import org.example.RegularPriceStrategy;
-import org.example.VIPDiscountStrategy;
+import org.example.order.Order;
+import org.example.order.factoryMethod.OrderFactory;
+import org.example.strategy.RegularPriceStrategy;
+import org.example.strategy.VIPDiscountStrategy;
 import org.junit.Before;
 import org.junit.Test;
 

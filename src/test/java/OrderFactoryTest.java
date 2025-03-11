@@ -1,6 +1,10 @@
 import static org.junit.Assert.*;
 
-import org.example.*;
+import org.example.order.*;
+import org.example.order.factoryMethod.DeliveryOrder;
+import org.example.order.factoryMethod.OnSiteOrder;
+import org.example.order.factoryMethod.OrderFactory;
+import org.example.order.factoryMethod.PickupOrder;
 import org.junit.jupiter.api.Test;
 
 public class OrderFactoryTest {
