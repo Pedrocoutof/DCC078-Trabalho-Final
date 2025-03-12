@@ -7,7 +7,7 @@ import java.lang.reflect.Constructor;
 public class OrderFactory {
     public static Order createOrder(String type, String orderId, double amount) {
 
-        Class<?> classe = null;
+        Class classe = null;
         Object objeto = null;
 
         try {
